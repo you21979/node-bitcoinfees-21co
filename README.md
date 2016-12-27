@@ -5,6 +5,16 @@ bitcoinfees from 21.co
 
 * https://bitcoinfees.21.co/api
 
+## limit
+
+```
+Current API Rate Limit: 5000 requests per hour.
+```
+
+* 5000 req/hour
+* 83.3 req/min
+* 1.3 req/sec
+
 ## install
 
 ```
