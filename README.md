@@ -53,7 +53,7 @@ bitcoinfees.FeesApi.list().then(console.log)
 
 ## Error Handling
 
-### simple erro control
+### simple error control
 
 ```
 bitcoinfees.FeesApi.recommended().catch(function(e){
