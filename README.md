@@ -51,4 +51,35 @@ bitcoinfees.FeesApi.list().then(console.log)
  ] }
 ```
 
+## Error Handling
+
+### simple erro control
+
+```
+bitcoinfees.FeesApi.recommended().catch(function(e){
+    console.log(e.message)
+})
+```
+
+### technical error control
+
+```
+var errors = require('bitcoinfees-21co/errors')
+bitcoinfees.FeesApi.recommended()
+    .catch(errors.StatusCodeError, function (reason) {
+        // HTTP STATUS ERROR(404 or 500, 502, etc...)
+        console.log("HTTP StatusCodeError " + reason.statusCode, "HTTP", reason.statusCode)
+    })
+    .catch(errors.RequestError, function (reason) {
+        // REQUEST ERROR(SYSTEMCALL, TIMEOUT)
+        console.log(reason.message, "SYSCALL", reason.error.code)
+    })
+    .catch(function(e){
+        // OTHER ERROR
+        console.log(e.message)
+    })
+```
+
+
+
 
