@@ -8,7 +8,7 @@
     "request": "^2.34"
   },
   "readmeFilename": "README.md",
-  "description": "",
+  "description": "bitcoinfees from 21.co",
   "main": "index.js",
   "devDependencies": {
   },
