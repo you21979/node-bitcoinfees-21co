@@ -94,4 +94,7 @@ bitcoinfees.FeesApi.recommended().then(function(res){
 })
 ```
 
+## memo
+
+It is better to store it in the database when using it on the server
 
