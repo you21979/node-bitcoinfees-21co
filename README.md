@@ -51,7 +51,7 @@ bitcoinfees.FeesApi.list().then(console.log)
  ] }
 ```
 
-## Error Handling
+## HTTP Error Handling
 
 ### simple error control
 
@@ -80,6 +80,18 @@ bitcoinfees.FeesApi.recommended()
     })
 ```
 
+## VALUE Error Handling
 
+```
+var bitcoinfees = require('bitcoinfees-21co');
+var assert = require('assert');
+var clamp = function(value, min, max){
+    return Math.min(Math.max(min, value), max)
+}
+bitcoinfees.FeesApi.recommended().then(function(res){
+    assert(res.hourFee > 0);
+    return clamp(res.hourFee, 20, 200) // The API obstacle leads to loss
+})
+```
 
 
