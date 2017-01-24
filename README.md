@@ -1,4 +1,9 @@
 # node-bitcoinfees-21co
+
+[![NPM](https://nodei.co/npm/bitcoinfees-21co.png?downloads=true&downloadRank=true&stars=true)](https://nodei.co/npm/bitcoinfees-21co)  
+[![Build Status](https://secure.travis-ci.org/you21979/node-bitcoinfees-21co.png?branch=master)](https://travis-ci.org/you21979/node-bitcoinfees-21co)
+[![Coverage Status](https://coveralls.io/repos/github/you21979/node-bitcoinfees-21co/badge.svg?branch=master)](https://coveralls.io/github/you21979/node-bitcoinfees-21co?branch=master)
+
 bitcoinfees from 21.co
 
 ## API Document
