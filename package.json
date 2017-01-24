@@ -11,6 +11,7 @@
   "description": "realtime bitcoinfees from 21.co",
   "main": "index.js",
   "devDependencies": {
+    "local-echoserver" : "",
     "mocha" : "",
     "istanbul":"",
     "coveralls":""
